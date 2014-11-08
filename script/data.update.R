@@ -15,7 +15,7 @@ values <- gsub("," , "", values)
 values <- gsub("\u00a0" , "", values)
 
 
-filename <- paste("csv/bjjs.gov.cn/",Sys.Date(), ".txt", sep="")
+filename <- paste("datafile/",Sys.Date(), ".txt", sep="")
 write(values, filename)
 values
 

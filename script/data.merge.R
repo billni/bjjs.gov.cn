@@ -1,7 +1,7 @@
-data.merge <- function() {
+﻿data.merge <- function() {
 pdf.options(family='GB1')
 pdf("bjjs.gov.cn.pdf")
-path <- "csv/bjjs.gov.cn"
+path <- "datafile"
 all.data <- data.frame(no=1:91)
 files <- dir(path, full.names=T)
 for(filename in files) {
