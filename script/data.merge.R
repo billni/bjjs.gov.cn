@@ -14,7 +14,7 @@ for(filename in files) {
   }
 
 nona.data <- na.omit(all.data)
-titles <- all.data[which(is.na(all.data$d1)),2]
+titles <- all.data[which(is.na(all.data$d1)), length(all.data)-1]
 j<-1
 opar <- par(no.readonly=T)
 par(lty=2, pch=19, mfrow=c(2,2))
