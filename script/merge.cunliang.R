@@ -1,7 +1,7 @@
 merge.cunliang <- function() {
 pdf.options(family='GB1')
 pdf("bjjs.gov.cn.cunliang.pdf")
-path <- "csv/bjjs.gov.cn/cunliang"
+path <- "datafile/cunliang/"
 all.data <- data.frame(no=1:20)
 files <- dir(path, full.names=T)
 for(filename in files) {

@@ -1,5 +1,5 @@
 merge.cunliang.yue <- function() {
-path <- "csv/bjjs.gov.cn/cunliangyue"
+path <- "datafile/cunliangyue/"
 files <- dir(path, full.names=T)
 all.data <- data.frame(1:10)
 for(filename in files) {

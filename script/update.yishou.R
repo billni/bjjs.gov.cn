@@ -1,5 +1,6 @@
 update.yishou <- function() {
 require(XML)
+path <- "datafile/yishou/"
 fdc.url <- 'http://www.bjjs.gov.cn/tabid/2167/default.aspx'
 html <- htmlTreeParse(fdc.url, useInternalNode=T)
 
@@ -15,7 +16,7 @@ values <- gsub("," , "", values)
 values <- gsub("\u00a0" , "", values)
 
 
-filename <- paste("csv/bjjs.gov.cn/yishou",Sys.Date(), ".txt", sep="")
+filename <- paste(path, Sys.Date(), ".txt", sep="")
 write(values, filename)
 values
 
