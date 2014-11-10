@@ -1,6 +1,7 @@
 update.cunliang.yue <- function() {
 #´æÁ¿·¿
 require(XML)
+path <- "datafile/cunliangyue/"
 fdc.url <- 'http://www.bjjs.gov.cn/tabid/2167/default.aspx'
 html <- htmlTreeParse(fdc.url, useInternalNode=T)
 
@@ -14,7 +15,7 @@ values <- gsub(",{1,}" , ",", values)
 values <- gsub("\u00a0" , "", values)
 
 
-filename <- paste("csv/bjjs.gov.cn/cunliangyue/",Sys.Date(), ".txt", sep="")
+filename <- paste(path, Sys.Date(), ".txt", sep="")
 write(values, filename)
 values
 

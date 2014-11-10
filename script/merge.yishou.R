@@ -1,7 +1,7 @@
 merge.yishou <- function() {
 pdf.options(family='GB1')
-pdf("bjjs.gov.cn.pdf")
-path <- "csv/bjjs.gov.cn/yishou"
+pdf("output/bjjs.gov.cn.pdf")
+path <- "datafile/yishou/"
 all.data <- data.frame(no=1:91)
 files <- dir(path, full.names=T)
 for(filename in files) {
@@ -30,5 +30,5 @@ for(i in 1:loopnum) {
 }
 par(opar)
 dev.list()
-dev.off()
+dev.off(dev.cur())
 }
