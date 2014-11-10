@@ -1,6 +1,10 @@
 merge.yishou <- function() {
 pdf.options(family='GB1')
+<<<<<<< HEAD
 pdf("output/bjjs.gov.cn.pdf")
+=======
+pdf("bjjs.gov.cn.pdf")
+>>>>>>> 04fed71592b20c1866a5b225c59ead5ba9ce1756
 path <- "datafile/yishou/"
 all.data <- data.frame(no=1:91)
 files <- dir(path, full.names=T)

@@ -1,6 +1,10 @@
 merge.cunliang <- function() {
 pdf.options(family='GB1')
+<<<<<<< HEAD
 pdf("output/bjjs.gov.cn.cunliang.pdf")
+=======
+pdf("bjjs.gov.cn.cunliang.pdf")
+>>>>>>> 04fed71592b20c1866a5b225c59ead5ba9ce1756
 path <- "datafile/cunliang/"
 all.data <- data.frame(no=1:20)
 files <- dir(path, full.names=T)
