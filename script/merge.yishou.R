@@ -22,7 +22,7 @@ loopnum <- nrow(nona.data)
 cols <- seq(from=3, to=length(all.data), by=2)
 for(i in 1:loopnum) {
    plot(t(nona.data[i,cols]), type="b", col=rainbow(10), xlab=nona.data[i,2], ylab="ֵ")
-   text(x=1:length(cols), y=t(nona.data[i,cols]), t(nona.data[i,cols]))
+   # text(x=1:length(cols), y=t(nona.data[i,cols]), t(nona.data[i,cols]))
    if(i %% 10 == 1) {       
 	title(main=titles[j])
         j<-j+1
